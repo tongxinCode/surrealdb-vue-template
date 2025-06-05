@@ -90,6 +90,7 @@ const handleCancel = () => {
             placeholder="123456"
             :prefix-icon="Lock"
             show-password
+            @keyup.enter="handleLogin"
           />
         </el-form-item>
 

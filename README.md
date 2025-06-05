@@ -2,7 +2,7 @@
 
 Keep pure, keep latest.
 
-Vue 3 + TypeScript + Vite + Surrealdb + Websocket
+Vue 3 + TypeScript + Vite + Surrealdb + Websocket + Element-plus
 
 ### Init Database
 

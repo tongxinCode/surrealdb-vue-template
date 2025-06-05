@@ -96,6 +96,26 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
+/* 添加全局滚动条样式 */
+:global(html) {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #909399 #f4f4f5;
+}
+
+:global(::-webkit-scrollbar) {
+  width: 8px;
+}
+
+:global(::-webkit-scrollbar-track) {
+  background: #f4f4f5;
+}
+
+:global(::-webkit-scrollbar-thumb) {
+  background-color: #909399;
+  border-radius: 4px;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -106,6 +126,8 @@ onUnmounted(() => {
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar-scrolled {
@@ -121,6 +143,8 @@ onUnmounted(() => {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .navbar-logo {
